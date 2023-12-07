@@ -191,12 +191,12 @@
 
         symbols {
             bindings = <
-&none   &trans  &trans           &trans                 &trans                                                                         &trans     &trans    &trans     &trans  &trans
-&trans  &trans  &trans           &trans                 &trans    &trans                                                     &trans    &trans     &trans    &trans     &trans  &trans
-&trans  &equal  &not_equal       &arrow_func            &and_op   &or_op                                                     &trans    &kp EQUAL  &kp PLUS  &kp MINUS  &trans  &trans
-&trans  &kp LT  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LBKT  &kp GRAVE                                                  &trans    &trans     &trans    &kp UNDER  &trans  &trans
-&trans  &kp GT  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp TILDE  &trans  &trans  &trans  &trans  &trans  &trans  &kp STAR  &trans     &trans    &trans     &trans  &trans
-&trans  &trans  &trans           &trans                 &trans               &trans  &trans  &trans  &trans  &trans  &trans            &trans     &trans    &trans     &trans  &trans
+&none   &trans  &trans           &trans                 &trans                                                                            &trans      &trans        &trans     &trans  &trans
+&trans  &trans  &trans           &trans                 &trans    &trans                                                     &trans       &trans      &trans        &trans     &trans  &trans
+&trans  &equal  &not_equal       &arrow_func            &and_op   &or_op                                                     &kp AT       &kp EQUAL   &kp PLUS      &kp MINUS  &trans  &trans
+&trans  &kp LT  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LBKT  &kp GRAVE                                                  &kp PERCENT  &kp CARET   &kp EXCL      &kp UNDER  &trans  &trans
+&trans  &kp GT  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp TILDE  &trans  &trans  &trans  &trans  &trans  &trans  &kp STAR     &kp DOLLAR  &kp QUESTION  &trans     &trans  &trans
+&trans  &trans  &trans           &trans                 &trans               &trans  &trans  &trans  &trans  &trans  &trans               &trans      &trans        &trans     &trans  &trans
             >;
         };
 
