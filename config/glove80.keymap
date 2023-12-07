@@ -120,18 +120,18 @@
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
 
-        equalivent: equalivent {
+        equal: equal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp EQUAL &kp EQUAL>;
-            label = "EQUAL TO";
+            label = "EQUAL";
         };
 
-        not_equivalent: not_equivalent {
+        not_equal: not_equal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EXCL &kp EQUAL &kp EQUAL>;
-            label = "NOT_EQUIVALENT";
+            label = "NOT_EQUAL";
         };
 
         arrow_func: arrow_func {
@@ -191,12 +191,12 @@
 
         symbols {
             bindings = <
-&none   &trans       &trans           &trans                 &trans                                                                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans           &trans                 &trans    &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &equalivent  &not_equivalent  &arrow_func            &or_op    &and_op                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LT       &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LBKT  &kp GRAVE                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GT       &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp TILDE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans           &trans                 &trans               &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none   &trans  &trans           &trans                 &trans                                                                         &trans     &trans    &trans     &trans  &trans
+&trans  &trans  &trans           &trans                 &trans    &trans                                                     &trans    &trans     &trans    &trans     &trans  &trans
+&trans  &equal  &not_equal       &arrow_func            &and_op   &or_op                                                     &trans    &kp EQUAL  &kp PLUS  &kp MINUS  &trans  &trans
+&trans  &kp LT  &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LBKT  &kp GRAVE                                                  &trans    &trans     &trans    &kp UNDER  &trans  &trans
+&trans  &kp GT  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp TILDE  &trans  &trans  &trans  &trans  &trans  &trans  &kp STAR  &trans     &trans    &trans     &trans  &trans
+&trans  &trans  &trans           &trans                 &trans               &trans  &trans  &trans  &trans  &trans  &trans            &trans     &trans    &trans     &trans  &trans
             >;
         };
 
